@@ -8,75 +8,75 @@
 	<body>
 
     <link rel="stylesheet" href="css/styles.css">
+    <script src="script/park_district.js"></script>
 	
 	<h1>Chicago Park District Special Olympics Form</h1>
     
-	<form action="http://www.example.org/cpd.aspx">
+	<form action="http://www.example.org/cpd.aspx" name="parkDistrictForm" onsubmit="return validate()">
 	<h2>Name</h2>
-	<p>First Name: <input type="text"></p>	
-	<p>Last Name: <input type="text"></p>
+	<p>First Name: <input type="text" name="fname"></p>	
+	<p>Last Name: <input type="text" name="lname"></p>
     <br>   
         
 	<h2>Age</h2>
-	<select type="selected">
-		<option selected="selected"></option>
-		<option>Under 18</option>
-		<option>18-34</option>
-		<option>35-49</option>
-		<option>50 and over</option>
+	<select type="selected" name="ageGroup">
+		<option selected="selected" value="0"></option>
+		<option value="1">Under 18</option>
+		<option value="2">18-34</option>
+		<option value="3">35-49</option>
+		<option value="4">50 and over</option>
 	</select>
     <br>
         
 	<h2>Gender</h2>
-	<input type="radio" name="radClass">Male<br>
-	<input type="radio" name="radClass">Female<br>
+	<input type="radio" name="gender">Male<br>
+	<input type="radio" name="gender">Female<br>
     <br>
         
-	<h2>What park do you do Special Olympics at?</h2>
-	<input type="radio" name="radClass">Bessemer<br>
-	<input type="radio" name="radClass">Columbus<br>
-	<input type="radio" name="radClass">Douglas<br>
-	<input type="radio" name="radClass">Eckhart<br>
-	<input type="radio" name="radClass">Gage<br>
-	<input type="radio" name="radClass">Harrison<br>
-	<input type="radio" name="radClass">Independence<br>
-	<input type="radio" name="radClass">Jesse Owens<br>
-	<input type="radio" name="radClass">Kosciuszko<br>
-	<input type="radio" name="radClass">Loyola<br>
-	<input type="radio" name="radClass">Mann<br>
-	<input type="radio" name="radClass">Marquette<br>
-	<input type="radio" name="radClass">McGuane<br>
-	<input type="radio" name="radClass">Mount Greenwood<br>
-	<input type="radio" name="radClass">Norwood<br>
-	<input type="radio" name="radClass">Piotrowski<br>
-	<input type="radio" name="radClass">Shabbona<br>
-	<input type="radio" name="radClass">Vittum<br>
-	<input type="radio" name="radClass">West Pullman<br>
-	<input type="radio" name="radClass">Wells<br>	
+	<h2>What park district do you do Special Olympics at?</h2>
+	<input type="radio" name="park">Bessemer<br>
+	<input type="radio" name="park">Columbus<br>
+	<input type="radio" name="park">Douglas<br>
+	<input type="radio" name="park">Eckhart<br>
+	<input type="radio" name="park">Gage<br>
+	<input type="radio" name="park">Harrison<br>
+	<input type="radio" name="park">Independence<br>
+	<input type="radio" name="park">Jesse Owens<br>
+	<input type="radio" name="park">Kosciuszko<br>
+	<input type="radio" name="park">Loyola<br>
+	<input type="radio" name="park">Mann<br>
+	<input type="radio" name="park">Marquette<br>
+	<input type="radio" name="park">McGuane<br>
+	<input type="radio" name="park">Mount Greenwood<br>
+	<input type="radio" name="park">Norwood<br>
+	<input type="radio" name="park">Piotrowski<br>
+	<input type="radio" name="park">Shabbona<br>
+	<input type="radio" name="park">Vittum<br>
+	<input type="radio" name="park">West Pullman<br>
+	<input type="radio" name="park">Wells<br>	
     <br>
         
 	<h2>What sports do you do for Special Olympics?</h2>
-	<input type="checkbox">Basketball<br>
-	<input type="checkbox">Bocce<br>
-	<input type="checkbox">Bowling<br>
-	<input type="checkbox">Flag Football<br>
-	<input type="checkbox">Floor Hockey<br>
-	<input type="checkbox">Golf<br>
-	<input type="checkbox">Gymnastics<br>
-	<input type="checkbox">Powerlifting<br>
-	<input type="checkbox">Skiing<br>
-	<input type="checkbox">Snowshoeing<br>
-	<input type="checkbox">Soccer<br>
-	<input type="checkbox">Softball<br>
-	<input type="checkbox">Swimming<br>
-	<input type="checkbox">Tennis<br>
-	<input type="checkbox">Track and Field<br>
-	<input type="checkbox">Volleyball<br>	
+	<input type="checkbox" name="sport">Basketball<br>
+	<input type="checkbox" name="sport">Bocce<br>
+	<input type="checkbox" name="sport">Bowling<br>
+	<input type="checkbox" name="sport">Flag Football<br>
+	<input type="checkbox" name="sport">Floor Hockey<br>
+	<input type="checkbox" name="sport">Golf<br>
+	<input type="checkbox" name="sport">Gymnastics<br>
+	<input type="checkbox" name="sport">Powerlifting<br>
+	<input type="checkbox" name="sport">Skiing<br>
+	<input type="checkbox" name="sport">Snowshoeing<br>
+	<input type="checkbox" name="sport">Soccer<br>
+	<input type="checkbox" name="sport">Softball<br>
+	<input type="checkbox" name="sport">Swimming<br>
+	<input type="checkbox" name="sport">Tennis<br>
+	<input type="checkbox" name="sport">Track and Field<br>
+	<input type="checkbox" name="sport">Volleyball<br>	
     <br>
 
-	<h2>Describe your Specal Olympics experience within the Chicago Park District.</h2>
-	<textarea rows="28" cols="84">
-	</textarea>
+	<h2>Describe your Special Olympics experience within the Chicago Park District.</h2>
+	<textarea rows="28" cols="84" name="feedback"></textarea>
     <br><br>
     
 	<input type="submit" value="Submit"> <input type="reset" value="Reset">
@@ -84,3 +84,4 @@
 
 	</body>
 </html>		
+
